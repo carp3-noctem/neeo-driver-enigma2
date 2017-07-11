@@ -1,6 +1,6 @@
 'use strict';
 // initialise of Enigma2 Receiver
-var HOST = '192.168.10.25';
+var HOST = '$$LOCAL-IP';
 // initialise of required additional services
 var request = require('request');
 

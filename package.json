@@ -1,6 +1,6 @@
 {
   "name": "neeo-dreambox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Let you Conrol your Dreambox (Enigma2-Receiver) with NEEO over TCP/IP",
   "main": "index.js",
   "scripts": {

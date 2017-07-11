@@ -11,9 +11,12 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 
 - If Volume Control (Increase, Decrease and Mute) should be used on Enigma2 Reciver then delete /* and */ in controller.js line 40 and 55
 
-## Changelog
-## Version 0.0.1
--Initial release
+# Changelog
+## Version 0.0.2
+- implement breack after each button send to prevent double sent
 
-##ToDo
+## Version 0.0.1
+- Initial release
+
+## ToDo
 - At the initial Release (0.0.1) only a Power Toggle is available. Dedicated Power On and Off with the Power Check needs to be implemented.
