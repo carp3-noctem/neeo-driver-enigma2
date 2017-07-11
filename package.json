@@ -1,0 +1,28 @@
+{
+  "name": "neeo-dreambox",
+  "version": "0.0.1",
+  "description": "Let you Conrol your Dreambox (Enigma2-Receiver) with NEEO over TCP/IP",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carp3-noctem/neeo-dreambox.git"
+  },
+  "keywords": [
+    "NEEO",
+    "Enigma2",
+    "Dreambox"
+  ],
+  "author": "M. Mahr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carp3-noctem/neeo-dreambox/issues"
+  },
+  "homepage": "https://github.com/carp3-noctem/neeo-dreambox#readme",
+  "dependencies": {
+    "neeo-sdk": "^0.42.3",
+    "request": "^2.81.0"
+  }
+}
