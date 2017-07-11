@@ -39,6 +39,7 @@ switch (name) {
   case "POWER TOGGLE":
    var Inquiry = 'powerstate?newstate=0'
    Inquire(Inquiry);
+   break;
 }
 /*
 //Not Used Keys (used with AVR)
