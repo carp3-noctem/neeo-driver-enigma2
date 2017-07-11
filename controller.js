@@ -13,15 +13,11 @@ var request = require('request');
 module.exports.onButtonPressed = function onButtonPressed(name) {
   console.log(`[CONTROLLER] ${name} button pressed`);
 
-//Power ON or OFF check
-
-//Toggle Power
-
-//Key Tranmit Function
-function sendKey(keyinput){
+//Key / Question Enigma 2 Transmit Function
+function Inquire(Inquiry){
   var headers ={HOST};
    var options ={
-     url: 'http://' + HOST +'/web/' + keyinput,
+     url: 'http://' + HOST +'/web/' + Inquiry,
      headers: headers
    };
    function callback(error, response, body){
@@ -31,161 +27,160 @@ function sendKey(keyinput){
    }
   request(options, callback);
 }
+
+//Power ON or OFF check
+function checkPowerState(powerstate){
+
+}
+
+//Toggle Power
+switch (name) {
+  case "POWER TOGGLE":
+   var Inquiry = 'powerstate?newstate=0'
+   Inquire(Inquiry);
+}
+/*
+//Not Used Keys (used with AVR)
+switch (name){
+  case "VOLUME UP":
+   var Inquiry ='vol?set=up';
+   Inquire(Inquiry);
+
+  case "VOLUME DOWN":
+   var keyinout = 'vol?set=down';
+   Inquire(Inquiry);
+
+  case "MUTE TOGGLE":
+   var Inquiry = 'vol?set=mute';
+   Inquire(Inquiry);
+}
+*/
+
 //Key Press Handler
 switch (name) {
   case "DIGIT 0":
-   var keyinput = 'remotecontrol?command=11';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=11';
+   Inquire(Inquiry);
+
   case "DIGIT 1":
-   var keyinput = 'remotecontrol?command=2';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=2';
+   Inquire(Inquiry);
+
   case "DIGIT 2":
-   var keyinput = 'remotecontrol?command=3';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=3';
+   Inquire(Inquiry);
+  
   case "DIGIT 3":
-   var keyinput = 'remotecontrol?command=4';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=4';
+   Inquire(Inquiry);
+
   case "DIGIT 4":
-   var keyinput = 'remotecontrol?command=5';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=5';
+   Inquire(Inquiry);
+
   case "DIGIT 5":
-   var keyinput = 'remotecontrol?command=6';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=6';
+   Inquire(Inquiry);
+
   case "DIGIT 6":
-   var keyinput = 'remotecontrol?command=7';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=7';
+   Inquire(Inquiry);
+
   case "DIGIT 7":
-   var keyinput = 'remotecontrol?command=8';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=8';
+   Inquire(Inquiry);
+
   case "DIGIT 8":
-   var keyinput = 'remotecontrol?command=9';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=9';
+   Inquire(Inquiry);
+  
   case "DIGIT 9":
-   var keyinput = 'remotecontrol?command=10';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=10';
+   Inquire(Inquiry);
+
   case "DIGIT 0":
-   var keyinput = 'remotecontrol?command=11';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=11';
+   Inquire(Inquiry);
+
   case "CURSOR ENTER":
-   var keyinput = 'remotecontrol?command=352';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=352';
+   Inquire(Inquiry);
+
   case "CURSOR UP":
-   var keyinput = 'remotecontrol?command=103';
-   sendKey(keyinput);
-  }
-switch (name) {
-  case "CUSOR DOWN":
-   var keyinput = 'remotecontrol?command=108';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=103';
+   Inquire(Inquiry);
+
+  case "CURSOR DOWN":
+   var Inquiry = 'remotecontrol?command=108';
+   Inquire(Inquiry);
+
   case "CURSOR LEFT":
-   var keyinput = 'remotecontrol?command=105';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=105';
+   Inquire(Inquiry);
+
   case "CURSOR RIGHT":
-   var keyinput = 'remotecontrol?command=106';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=106';
+   Inquire(Inquiry);
+
   case "FUNCTION RED":
-   var keyinput = 'remotecontrol?command=398';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=398';
+   Inquire(Inquiry);
+
   case "FUNCTION GREEN":
-   var keyinput = 'remotecontrol?command=399';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=399';
+   Inquire(Inquiry);
+
   case "FUNCTION YELLOW":
-   var keyinput = 'remotecontrol?command=400';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=400';
+   Inquire(Inquiry);
+
   case "FUNCTION BLUE":
-   var keyinput = 'remotecontrol?command=401';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=401';
+   Inquire(Inquiry);
+
   case "CHANNEL UP":
-   var keyinput = 'remotecontrol?command=106';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=106';
+   Inquire(Inquiry);
+
   case "CHANNEL DOWN":
-   var keyinput = 'remotecontrol?command=105';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=105';
+   Inquire(Inquiry);
+
   case "PLAY":
-   var keyinput = 'remotecontrol?command=399';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=399';
+   Inquire(Inquiry);
+
   case "PAUSE":
-   var keyinput = 'remotecontrol?command=400';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=400';
+   Inquire(Inquiry);
+
   case "STOP":
-   var keyinput = 'remotecontrol?command=377';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=377';
+   Inquire(Inquiry);
+
   case "REVERSE":
-   var keyinput = 'remotecontrol?command=398';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=398';
+   Inquire(Inquiry);
+
   case "FORWARD":
-   var keyinput = 'remotecontrol?command=401';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=401';
+   Inquire(Inquiry);
+
   case "SKIP SECONDS BACKWARD":
-   var keyinput = 'remotecontrol?command=398';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=398';
+   Inquire(Inquiry);
+
   case "SKIP SECONDS FORWARD":
-   var keyinput = 'remotecontrol?command=401';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=401';
+   Inquire(Inquiry);
+
   case "BACK":
-   var keyinput = 'remotecontrol?command=174';
-   sendKey(keyinput);
-  }
-switch (name) {
+   var Inquiry = 'remotecontrol?command=174';
+   Inquire(Inquiry);
+
   case "MENU":
-   var keyinput = 'remotecontrol?command=139';
-   sendKey(keyinput);
+   var Inquiry = 'remotecontrol?command=139';
+   Inquire(Inquiry);
   }
 
 };

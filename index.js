@@ -24,6 +24,9 @@ const enigma2 = neeoapi.buildDevice('Enigma2-Receiver')
   .addButtonGroup('Transport Search')
   .addButtonGroup('Transport Scan')
   .addButtonGroup('Transport Skip')
+  .addButton({ name: 'POWER TOGGLE', lable: 'Power Toggle'})
+  .addButton({ name: 'POWER ON', lable: 'Power On'})
+  .addButton({ name: 'POWER OFF', lable: 'Power Off'})
   
 // Button Handler / Sends the Pressed Button to controller.js
   .addButtonHander(controller.onButtonPressed);
