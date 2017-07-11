@@ -17,3 +17,4 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 
 ##ToDo
 - Finish of the contol abilitis
+- At the initial Release (0.0.1) only a Power Toggle is available. Dedicated Power On and Off with the Power Check needs to be implemented.
