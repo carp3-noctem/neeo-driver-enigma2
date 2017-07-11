@@ -3,7 +3,7 @@
 const neeoapi = require('neeo-sdk');
 const controller = require('./controller');
 
-console.log('NEEO SDK Example "Dreambox" adapter');
+console.log('NEEO SDK Example "Enigma" adapter');
 console.log('---------------------------------------------');
 
 // first we set the device info, used to identify it on the Brain
