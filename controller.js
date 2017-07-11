@@ -13,7 +13,7 @@ var request = require('request');
 module.exports.onButtonPressed = function onButtonPressed(name) {
   console.log(`[CONTROLLER] ${name} button pressed`);
 
-//Key / Question Enigma 2 Transmit Function
+//Inquire Enigma2 Box
 function Inquire(Inquiry){
   var headers ={HOST};
    var options ={
@@ -28,9 +28,10 @@ function Inquire(Inquiry){
   request(options, callback);
 }
 
-//Power ON or OFF check
+//Power ON / OFF check
 function checkPowerState(powerstate){
-
+ var powerstate = 'powerstate'
+ Inquire(Inquiry);
 }
 
 //Toggle Power
