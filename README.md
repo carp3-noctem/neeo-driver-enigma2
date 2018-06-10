@@ -22,7 +22,7 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
    Green = Fully Supported  
    Yellow = depends on Used Box  
    Red = manual change in code required  
-   empty Green = Not Programmed in this Device)
+   empty Green = Not Programmed in this Device
 2. Pictures of the Boxes can be found here: [OpenWebif Box Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/boxes)
 3. Pictures of the Remotes can be found here: [OpenWebif Remote Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/remotes)
 
