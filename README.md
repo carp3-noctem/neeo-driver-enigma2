@@ -18,7 +18,7 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 ## For Supported Devices check the following:
 
    Due to the limited access to all of the required Boxes, i was only able to Test the Functions at an Dreambox 800HDse and some limited parts on an VU+ duo2, if you found any Issues, please file an Issue here on Github.
-1. Check Google Spreadsheet: [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_xMGKNtTns5o61hHPmhyMcesBlo1rajajW8Ir8bl9UQ/edit?usp=sharing)
+1. Check Google Spreadsheet: [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_xMGKNtTns5o61hHPmhyMcesBlo1rajajW8Ir8bl9UQ/edit?usp=sharing)  
    (Green = Fully Supported, Yellow = depends on Used Box, Red = manual change in code required, empty Green = Not Programmed in this Device)
 2. Pictures of the Boxes can be found here: [OpenWebif Box Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/boxes)
 3. Pictures of the Remotes can be found here: [OpenWebif Remote Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/remotes)
