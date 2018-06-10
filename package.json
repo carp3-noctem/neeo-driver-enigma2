@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+        "spec": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:carp3-noctem/neeo-driver-enigma2.git",
+          "sshUrl": "git+ssh://git@github.com/carp3-noctem/neeo-driver-enigma2.git",
+          "httpsUrl": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+          "gitUrl": "git://github.com/carp3-noctem/neeo-driver-enigma2.git",
+          "shortcut": "github:carp3-noctem/neeo-driver-enigma2",
+          "directUrl": "https://raw.githubusercontent.com/carp3-noctem/neeo-driver-enigma2/master/package.json"
+        }
+      },
+      "/home/pi"
+    ]
+  ],
+  "_from": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+  "_id": "neeo-driver-enigma2@0.1.2",
+  "_inCache": true,
+  "_location": "/neeo-driver-enigma2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+    "spec": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:carp3-noctem/neeo-driver-enigma2.git",
+      "sshUrl": "git+ssh://git@github.com/carp3-noctem/neeo-driver-enigma2.git",
+      "httpsUrl": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+      "gitUrl": "git://github.com/carp3-noctem/neeo-driver-enigma2.git",
+      "shortcut": "github:carp3-noctem/neeo-driver-enigma2",
+      "directUrl": "https://raw.githubusercontent.com/carp3-noctem/neeo-driver-enigma2/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git#fa6e1f178fd14d5093fa99b79257de7395de9128",
+  "_shasum": "58f43ac695e633eb5e72d803217a542c603a989a",
+  "_shrinkwrap": null,
+  "_spec": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git",
+  "_where": "/home/pi",
+  "author": {
+    "name": "M. Mahr"
+  },
+  "bugs": {
+    "url": "https://github.com/carp3-noctem/neeo-driver-enigma2/issues"
+  },
+  "dependencies": {
+    "neeo-sdk": "^0.50.0",
+    "request": "^2.81.0"
+  },
+  "description": "Let you Conrol your Enigma2-Receiver with NEEO over TCP/IP",
+  "devDependencies": {},
+  "gitHead": "fa6e1f178fd14d5093fa99b79257de7395de9128",
+  "homepage": "https://github.com/carp3-noctem/neeo-driver-enigma2#readme",
+  "keywords": [
+    "NEEO",
+    "Enigma2",
+    "Dreambox"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "neeo-driver-enigma2",
+  "optionalDependencies": {},
+  "readme": "# NEEO driver for Enigma2 Receivers\nThis Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP\n\n## Information about NEEO\n- Please see https://neeo.com/ for more Information about NEEO The Thinking Remote\n- For more about NEEOs SDK visit https://github.com/NEEOInc/neeo-sdk\n- For Help or any Feature Request, visit https://planet.neeo.com/t/m2k53t\n\n## Requirements\n- install this Packet with NPM (neeo-driver-enigma2)\n- open config.js and Change the IP to your Enigma2 IP\n- Enabled openWebif on the Enigma2 device\n\n## For Supported Devices check the following:\n   Due to the limited access to all of the required Boxes, i was only able to Test the Functions at an Dreambox 800HDse and some limited parts on an VU+ duo2, if you found any Issues, please file an Issue here on Github.\n1. Check Google Spreadsheet: [Google Spreadsheet] (https://docs.google.com/spreadsheets/d/1_xMGKNtTns5o61hHPmhyMcesBlo1rajajW8Ir8bl9UQ/edit?usp=sharing)\n   (Green = Fully Supported, Yellow = depends on Used Box, Red = manual change in code required, empty Green = Not Programmed in this Device)\n2. Pictures of the Boxes can be found here: [OpenWebif Box Pictures] (https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/boxes)\n3. Pictures of the Remotes can be found here: [OpenWebif Remote Pictures] (https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/remotes)\n\n# Changelog\n## Version 0.1.2\n- added dependencie Sleep\n- Changed Brain Check address\n## Version 0.1.0\n- implemented a brain live check every 3 Min the SDK Checks if the Brain is reachable, if not the Code try's to discover the Brain again and if successfull register the driver again\n- Provide all Supported / needed OpenWebif Buttons according to [OpenWebif Github] (https://github.com/E2OpenPlugins/e2openplugin-OpenWebif)\n  More Informations of the Implemented Buttons can be found on this [Google Spreadsheet] (https://docs.google.com/spreadsheets/d/1_xMGKNtTns5o61hHPmhyMcesBlo1rajajW8Ir8bl9UQ/edit?usp=sharing)\n\n## Version 0.0.6\n- devices added\n\n## Version 0.0.5\n- added more Manufacturers as search Token\n\n## Version 0.0.4\n- rewrite for external config File\n\n## Version 0.0.3\n- Merged dedicated Power ON / OFF into release (THX to hardcorehead87)\n- Info Button added\n\n## Version 0.0.2\n- implemented breack after each button sent to prevent double input\n\n## Version 0.0.1\n- Initial release\n\n## ToDo\n- When the SDK get a list function it can be possbile to Enter the Movie readout or the actual EPG, let see what will come!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carp3-noctem/neeo-driver-enigma2.git"
+  },
+  "scripts": {
+    "start": "neeo-sdk start"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "version": "0.2.0",
+
+  "neeoSdkOptions": {
+    "brainHost": "192.168.1.16",
+    "brainPort": 3000,
+    "serverName": "coding",
+    "serverPort": 6637
+  }
+}
