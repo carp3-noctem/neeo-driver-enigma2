@@ -26,6 +26,12 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 2. Pictures of the Boxes can be found here: [OpenWebif Box Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/boxes)
 3. Pictures of the Remotes can be found here: [OpenWebif Remote Pictures](https://github.com/E2OpenPlugins/e2openplugin-OpenWebif/tree/master/plugin/public/images/remotes)
 
+## Support my Work
+
+```html
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Send me a Coffee', '#4646b8', 'S6S2EYX0');kofiwidget2.draw();</script>
+```
+
 # Changelog
 
 ## Version 0.2.1

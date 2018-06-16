@@ -57,7 +57,7 @@
     "url": "https://github.com/carp3-noctem/neeo-driver-enigma2/issues"
   },
   "dependencies": {
-    "neeo-sdk": "^0.50.0",
+    "neeo-sdk": "^0.50.5",
     "request": "^2.81.0"
   },
   "description": "Let you Conrol your Enigma2-Receiver with NEEO over TCP/IP",
