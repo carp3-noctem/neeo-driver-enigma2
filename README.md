@@ -28,9 +28,7 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 
 ## Support my Work
 
-```html
-<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Send me a Coffee', '#4646b8', 'S6S2EYX0');kofiwidget2.draw();</script>
-```
+If you like, you can send me a Coffee via [Ko-fi.com](https://ko-fi.com/carpenoctem)
 
 # Changelog
 
