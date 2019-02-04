@@ -29,8 +29,17 @@ This Project allows the Control of any Enigma2 DVB Reciver with NEEO over TCP/IP
 ## Support my Work
 
 If you like, you can send me a Coffee via [Ko-fi.com](https://ko-fi.com/carpenoctem)
+or you can donate via [PayPal.com](http://paypal.me/MMahr)
 
 # Changelog
+
+## Version 0.2.3
+
+- Correrted Error CLI Start not possible
+
+## Version 0.2.2
+
+- Added PayPal Donate
 
 ## Version 0.2.1
 
